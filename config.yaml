@@ -1,0 +1,18 @@
+broker: sim            # sim | mt5  (change to mt5 after connecting)
+decision: rules        # rules | laya
+symbols:               # MT5 symbol names vary by broker (e.g. XAUUSD.m, US100, US30)
+  XAUUSD: {yf: "GC=F",     pip: 0.1,    spread: 0.30,   contract: 100}
+  EURUSD: {yf: "EURUSD=X", pip: 0.0001, spread: 0.00012, contract: 100000}
+  NAS100: {yf: "NQ=F",     pip: 1.0,    spread: 1.5,    contract: 1}
+  US30:   {yf: "YM=F",     pip: 1.0,    spread: 3.0,    contract: 1}
+timeframe: "1h"
+risk:
+  start_balance: 10000
+  risk_per_trade: 0.005     # 0.5% of equity
+  max_daily_loss: 0.02      # stop trading for the day at -2%
+  max_open_positions: 4
+  sl_atr: 1.5
+  tp_atr: 2.5
+  commission_per_lot: 7.0
+laya_min_confidence: 0.80
+mt5: {login: 0, password_env: MT5_PASSWORD, server: ""}

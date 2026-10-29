@@ -1,0 +1,13 @@
+pandas
+numpy
+pyyaml
+yfinance
+streamlit
+plotly
+dash
+streamlit-lightweight-charts
+# MetaTrader5   # install after MT5 is set up (Windows only)
+# laya          # optional decision model; needs a Python version torch supports
+python-dotenv
+pydantic
+pytest
